@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-const API_KEY = process.env.OPENWEATHER_API_KEY;
+const API_KEY = process.env.API_KEY;
 
 // 🌦 API route to fetch weather data
 app.get("/api/weather", async (req, res) => {
